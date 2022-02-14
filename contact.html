@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <!-- <li><a href="donate.html">Donate</a></li> -->
+        <li><a href="learn.html">Learn More</a></li>
+        <li><a class="active" href="contact.html">Contact Us</a></li>
+      </ul>
+    </header>
+    <div class="form-container">
+      <form id="survey-form">
+        <div class="form-group">
+          <label class="label-p" id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label class="label-p" id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label class="label-p" id="number-label" for="number"
+            >Phone number<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="phone_number"
+            id="number"
+            class="form-control"
+            placeholder="Phone number"
+          />
+        </div>
+        <div class="form-group">
+          <p class="label-p">Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+            style="height: 100px"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
